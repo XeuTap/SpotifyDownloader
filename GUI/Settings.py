@@ -1,5 +1,5 @@
 from tkinter import *
-from utils import save_cfg, load_cfg, create_cfg
+from libs.utils import save_cfg, load_cfg, create_cfg
 
 
 class Settings(Frame):

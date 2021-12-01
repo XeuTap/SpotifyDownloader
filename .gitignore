@@ -2,3 +2,7 @@ dist/*
 downloads/*
 GUI/tracks/*
 GUI/data/*
+/build/
+/data/
+/logs/
+/venv/

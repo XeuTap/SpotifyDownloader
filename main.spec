@@ -1,17 +1,16 @@
 # -*- mode: python ; coding: utf-8 -*-
 
+
 block_cipher = None
 
-add_dirs= [
-('resources', 'resources')
-]
 
-a = Analysis(['spotity_main.py'],
-             pathex=['C:\\Users\\XeuTap\\PycharmProjects\\PythonLearning\\spotidw','C:\\Users\\XeuTap\\PycharmProjects\\PythonLearning\\spotidw\\GUI'],
+a = Analysis(['main.py'],
+             pathex=[],
              binaries=[],
-             datas=add_dirs,
+             datas=[],
              hiddenimports=[],
              hookspath=[],
+             hooksconfig={},
              runtime_hooks=[],
              excludes=[],
              win_no_prefer_redirects=False,
@@ -20,13 +19,14 @@ a = Analysis(['spotity_main.py'],
              noarchive=False)
 pyz = PYZ(a.pure, a.zipped_data,
              cipher=block_cipher)
+
 exe = EXE(pyz,
           a.scripts,
           a.binaries,
           a.zipfiles,
-          a.datas,
+          a.datas,  
           [],
-          name='SpotiParser',
+          name='main',
           debug=False,
           bootloader_ignore_signals=False,
           strip=False,
@@ -34,4 +34,7 @@ exe = EXE(pyz,
           upx_exclude=[],
           runtime_tmpdir=None,
           console=True,
-          icon='spotify.ico' )
+          disable_windowed_traceback=False,
+          target_arch=None,
+          codesign_identity=None,
+          entitlements_file=None )
