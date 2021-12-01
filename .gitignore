@@ -2,7 +2,9 @@ dist/*
 downloads/*
 GUI/tracks/*
 GUI/data/*
-/build/
-/data/
-/logs/
-/venv/
+build/*
+data/*
+logs/*
+venv/*
+.idea/*
+__pycache__/*
